@@ -618,8 +618,8 @@
     <div class="form">
         <div class="col-md-8 offset-md-2">
             <h1>Send Message</h1>
-            <form method="POST" id="target" action="/el/dacaka">
-                <input type="hidden" name="_token" value="6CyBYL6GhtRnNyk9k3VrIyRRF7LiA8bwCZZu0tYd">
+            <form method="POST" id="target" action="/el/dacaka" value="6CyBYL6GhtRnNyk9k3VrIyRRF7LiA8bwCZZu0tYd">
+                <input type="hidden" name="_token">
               <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
@@ -640,9 +640,9 @@
                     <label for="message">Message</label>
                     <textarea id="message" class="form-control" name="message" rows="8" required=""></textarea>
                 </div>
-               
-                <input type="hidden" value="" name="url">
+            
                 <button type="submit" class="btn btn-lg btn-success btn-block">Send Message</button>
+              <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
             </form>
         </div>
     </div>
